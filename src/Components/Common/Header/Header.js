@@ -24,10 +24,10 @@ const Header = () => {
                             </Nav>
                         </Navbar.Collapse>
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav style={{ gap: "0.8rem" }}>
+                            <Nav style={{ gap: "1rem" }}>
                                 <NotificationIcon />
                                 <ChatIcon />
-                                <div style={{ gap: "0.8rem" }} className="d-flex">
+                                <div style={{ gap: "1rem" }} className="d-flex">
                                     <img src={UserIcon} alt="UserIcon" />
                                     <div className='text-white'>
                                         Hi , Aleesha
