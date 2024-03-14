@@ -1,11 +1,14 @@
 import React from 'react'
 import "./Home.scss"
+import bannerImg from "../../Assets/Images/bannerimg.jpg"
 
 const Home = () => {
     return (
         <>
             <div className='Home'>
-                <h1>Home</h1>
+                <section className='homeBanner'>
+                    <img className='w-100' src={bannerImg} alt="Banner" />
+                </section>
             </div>
         </>
     )

@@ -1,0 +1,10 @@
+@import "../../../Assets/Theme/_var.scss";
+
+.postCard {
+    width: 726px;
+    background-color: $cardbg;
+    border: 1px solid $baseclr;
+    padding: 20px;
+    border-radius: 8px;
+}
+

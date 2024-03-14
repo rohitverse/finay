@@ -1,0 +1,10 @@
+@import "../../../Assets/Theme/_var.scss";
+
+.ProfileEditCard {
+    background-color: $cardbg;
+    width: 365px;
+    padding: 25px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}

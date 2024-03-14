@@ -2,4 +2,11 @@
 
 .siteHeader {
     background-color: $baseclr;
+    padding: 15px 0;
+
+    .navbar {
+        .nav-link {
+            font-size: 14px;
+        }
+    }
 }

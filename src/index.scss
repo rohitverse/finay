@@ -26,5 +26,24 @@ figure {
 }
 
 * {
-  color: white;
+  color: $white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+  color: $lighttext;
+  font-weight: 400;
 }
