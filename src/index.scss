@@ -1,0 +1,30 @@
+@import "./Assets/Theme/_var.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: $basefont;
+  background-color: $baseclr;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  // color: $yellow;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+* {
+  color: white;
+}
