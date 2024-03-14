@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ProfileEditCard.scss"
-import userImg from "../../../Assets/Images/userimg.png"
+import userimage  from "../../../Assets/Images/userimg.png"
 import CustomButton from '../../../Components/Common/CustomButton/CustomButton'
 
 const ProfileEditCard = () => {
@@ -8,7 +8,7 @@ const ProfileEditCard = () => {
         <>
             <div className='ProfileEditCard text-center'>
                 <figure className='UserImg mb-3'>
-                    <img src={userImg} alt="User" />
+                    <img src={userimage} alt="User" />
                 </figure>
                 <h5>Yolotli Bailey</h5>
                 <h6>@yolotli_bailey</h6>
@@ -25,7 +25,7 @@ const ProfileEditCard = () => {
                     </div>
                 </div>
 
-                <CustomButton text="Edit Profile" className="mt-4"  />
+                <CustomButton text="Edit Profile" className="mt-4" />
             </div>
         </>
     )

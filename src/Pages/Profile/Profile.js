@@ -7,16 +7,20 @@ import PostCard from './PostCard/PostCard'
 import postimage from "../../Assets/Images/bannerimg.jpg"
 import userimage from "../../Assets/Images/User.png"
 
+
 const Profile = () => {
     const postData = [
         {
             name: 'Abhi Manapragada',
-            userimage:userimage,
+            time: "10 minutes ago",
+            userimage: userimage,
             caption: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde exercitationem eum aspernatur facilis! Assumenda repellat quia placeat nesciunt? Odit dolor voluptas sit commodi fugiat quis. Aliquam dolorem placeat voluptatibus labore?",
             postimage: postimage,
+
         }, {
             name: 'Rohit Kumar',
-            userimage:userimage,
+            time: "2 hours ago",
+            userimage: userimage,
             caption: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde exercitationem eum aspernatur facilis! Assumenda repellat quia placeat nesciunt? Odit dolor voluptas sit commodi fugiat quis. Aliquam dolorem placeat voluptatibus labore?",
             postimage: postimage,
         },
@@ -40,6 +44,7 @@ const Profile = () => {
                                     <PostCard
                                         key={index}
                                         username={item.name}
+                                        time={item.time}
                                         postimage={item.postimage}
                                         caption={item.caption}
                                     />

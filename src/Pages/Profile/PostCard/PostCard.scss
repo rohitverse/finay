@@ -6,5 +6,11 @@
     border: 1px solid $baseclr;
     padding: 20px;
     border-radius: 8px;
-}
 
+    img {
+        border-radius: 5px;
+    }
+    figure{
+        min-width:48px ;
+    }
+}

@@ -35,15 +35,23 @@ img {
 
 h4 {
   margin-bottom: 0;
-}
-
-h4 {
   font-size: 20px;
   font-weight: 500;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 200;
+  margin-bottom: 0;
 }
 
 p {
   font-size: 14px;
   color: $lighttext;
   font-weight: 400;
+}
+
+.horizontal-line {
+  border-top: 1px solid $hrclr;
+  margin: 10px 0;
 }
