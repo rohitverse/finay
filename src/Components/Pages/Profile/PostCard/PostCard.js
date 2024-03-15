@@ -1,12 +1,13 @@
 import React from 'react'
-import userimage from "../../../../Assets/Images/userimg.png"
+// import userimage from "../../../../Assets/Images/userimg.png"
 import "./PostCard.scss"
 import { Like, Comment, Share, Flag } from "../../../../Assets/Images/Svgicon"
 
-const PostCard = ({ username, time, caption, postimage }) => {
+const PostCard = ({ username, time, caption, postimage, userimage }) => {
     return (
         <>
-            <div className='postCard my-2'>
+            <div className='postCard my-4'>
+              
                 <div className='d-flex justify-content-between'>
                     <figure >
                         <img src={userimage} alt="User" className='imagePost' />

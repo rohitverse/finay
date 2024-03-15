@@ -8,7 +8,6 @@ import AppleMusic from "../../../../Assets/Images/AppleMusic.png";
 import Spotify from "../../../../Assets/Images/Spotify.png";
 import SoundCloud from "../../../../Assets/Images/SoundCloud.png";
 
-
 const ProfileEditCard = () => {
     return (
         <>
