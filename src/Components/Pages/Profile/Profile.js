@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap'
 import PostCard from './PostCard/PostCard'
 import postimage from "../../../Assets/Images/bannerimg.jpg"
 import userimage from "../../../Assets/Images/User.png"
+import LibraryCard from './Library/LibraryCard'
 
 
 const Profile = () => {
@@ -37,6 +38,7 @@ const Profile = () => {
 
                         <div className=''>
                             <ProfileEditCard />
+                            <LibraryCard />
                         </div>
                         <div>
                             {postData.map((item, index) => {

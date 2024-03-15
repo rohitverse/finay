@@ -1,7 +1,13 @@
 import React from 'react'
 import "./ProfileEditCard.scss"
-import userimage  from "../../../../Assets/Images/userimg.png"
+import userimage from "../../../../Assets/Images/userimg.png"
 import CustomButton from '../../../../Components/Common/CustomButton/CustomButton'
+import Tiktok from "../../../../Assets/Images/Tiktok.png";
+import Instagram from "../../../../Assets/Images/Instagram.png";
+import AppleMusic from "../../../../Assets/Images/AppleMusic.png";
+import Spotify from "../../../../Assets/Images/Spotify.png";
+import SoundCloud from "../../../../Assets/Images/SoundCloud.png";
+
 
 const ProfileEditCard = () => {
     return (
@@ -26,6 +32,23 @@ const ProfileEditCard = () => {
                 </div>
 
                 <CustomButton text="Edit Profile" className="mt-4" />
+                <div className='d-flex justify-content-between px-5 mt-3'>
+                    <figure>
+                        <img src={Tiktok} alt="Tiktok" />
+                    </figure>
+                    <figure>
+                        <img src={Instagram} alt="Instagram" />
+                    </figure>
+                    <figure>
+                        <img src={AppleMusic} alt="AppleMusic" />
+                    </figure>
+                    <figure>
+                        <img src={SoundCloud} alt="SoundCloud" />
+                    </figure>
+                    <figure>
+                        <img src={Spotify} alt="Spotify" />
+                    </figure>
+                </div>
             </div>
         </>
     )
