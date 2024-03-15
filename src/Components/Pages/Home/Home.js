@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.scss"
-import bannerImg from "../../Assets/Images/bannerimg.jpg"
+import bannerImg from "../../../Assets/Images/bannerimg.jpg"
 
 const Home = () => {
     return (

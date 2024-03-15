@@ -1,7 +1,7 @@
 import React from 'react'
-import userimage from "../../../Assets/Images/userimg.png"
+import userimage from "../../../../Assets/Images/userimg.png"
 import "./PostCard.scss"
-import { Like, Comment, Share, Flag } from "../../../Assets/Images/Svgicon"
+import { Like, Comment, Share, Flag } from "../../../../Assets/Images/Svgicon"
 
 const PostCard = ({ username, time, caption, postimage }) => {
     return (

@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
             <div className='siteFooter my-4'>
-                <Container>
+                <Container className='my-4'>
                     <Row>
                         <Col>
                             <Link className='brandlogo d-flex' to="/">

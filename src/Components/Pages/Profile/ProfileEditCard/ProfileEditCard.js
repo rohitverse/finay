@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ProfileEditCard.scss"
-import userimage  from "../../../Assets/Images/userimg.png"
-import CustomButton from '../../../Components/Common/CustomButton/CustomButton'
+import userimage  from "../../../../Assets/Images/userimg.png"
+import CustomButton from '../../../../Components/Common/CustomButton/CustomButton'
 
 const ProfileEditCard = () => {
     return (

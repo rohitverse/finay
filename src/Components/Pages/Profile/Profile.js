@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Profile.scss"
-import bannerImg from "../../Assets/Images/bannerimg.jpg"
+import bannerImg from "../../../Assets/Images/bannerimg.jpg"
 import ProfileEditCard from './ProfileEditCard/ProfileEditCard'
 import { Container } from 'react-bootstrap'
 import PostCard from './PostCard/PostCard'
-import postimage from "../../Assets/Images/bannerimg.jpg"
-import userimage from "../../Assets/Images/User.png"
+import postimage from "../../../Assets/Images/bannerimg.jpg"
+import userimage from "../../../Assets/Images/User.png"
 
 
 const Profile = () => {
