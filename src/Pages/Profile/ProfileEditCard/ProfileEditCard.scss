@@ -1,4 +1,4 @@
-@import "../../../../Assets/Theme/_var.scss";
+@import "../../../Assets/Theme/_var.scss";
 
 .ProfileEditCard {
     background-color: $cardbg;
@@ -7,5 +7,4 @@
     margin-top: -100px;
     position: relative;
     z-index: 1;
-    border-radius: 10px;
 }
