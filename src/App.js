@@ -4,6 +4,7 @@ import Header from "./Components/Common/Header/Header";
 import Footer from "./Components/Common/Footer/Footer";
 import "./App.scss";
 import Profile from "./Pages/Profile/Profile";
+import MyWell from "./Pages/Profile/MyWell/MyWell";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
           <div className="wrapper-layout-inside">
             <Header />
             <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route index element={<Profile />}>
-                  
+              <Route index element={<Home />} />
+              <Route path="/profile" element={<Profile />}>
+                  <Route path="my-well" element={<MyWell />} />
+                  <Route path="my-well" element={<MyWell />} />
               </Route>
             </Routes>
           </div>

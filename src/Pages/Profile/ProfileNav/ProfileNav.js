@@ -1,0 +1,14 @@
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+
+const ProfileNav = () => {
+  return (
+    <div className='profileNav'>
+       <NavLink to="my-well" >My well</NavLink>
+       <Link to="#" >Library</Link>
+       <Link to="#" >Store</Link>
+    </div>
+  )
+}
+
+export default ProfileNav

@@ -3,11 +3,12 @@ import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
 import { Discord, Instagram, LinkedIn, Telegram, Twitter } from '../../../Assets/Images/Svgicon'
 import Logo from "../../../Assets/Images/logo.svg"
 import { Link } from 'react-router-dom'
+import "./Footer.scss"
 
 const Footer = () => {
     return (
         <>
-            <div className='siteFooter my-4'>
+            <div className='siteFooter mx-4 py-4'>
                 <Container>
                     <Row>
                         <Col>
