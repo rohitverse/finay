@@ -21,7 +21,7 @@ const MyWell = () => {
   ];
   return (
     <>
-      <div className="myWell">
+      <div className="myWell my-3">
         {postData.map((item, index) => {
           return (
             <PostCard

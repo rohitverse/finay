@@ -6,5 +6,9 @@
     border: 1px solid $baseclr;
     padding: 20px;
     border-radius: 8px;
+    .hr{
+        border-bottom: 1px solid $hrcolor;
+        border-collapse: collapse;
+    }
 }
 

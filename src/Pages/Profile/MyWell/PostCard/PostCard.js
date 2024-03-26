@@ -2,6 +2,15 @@ import React from "react";
 
 import UserImg from "../../../../Assets/Images/userimage.png";
 import "./PostCard.scss";
+import {
+  AppleMusic,
+  Comment,
+  Flag,
+  Heart,
+  InstagramP,
+  Share,
+  Spotify,
+} from "../../../../Assets/Images/Svgicon";
 
 const PostCard = ({ username, caption, postimage }) => {
   return (
@@ -19,6 +28,25 @@ const PostCard = ({ username, caption, postimage }) => {
               </div>
             )}
             <p>{caption}</p>
+            <div className="hr"></div>
+            <div className="interaction d-flex justify-content-between my-2">
+              <div className="first">
+                <span className="me-3">
+                  <Heart />
+                </span>
+                <span className="">
+                  <Comment />
+                </span>
+              </div>
+              <div className="second">
+                <span className="">
+                  <Share />
+                </span>
+                <span className="ms-3">
+                  <Flag />
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

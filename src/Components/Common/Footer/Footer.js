@@ -8,7 +8,7 @@ import "./Footer.scss"
 const Footer = () => {
     return (
         <>
-            <div className='siteFooter mx-4 py-4'>
+            <div className='siteFooter py-4'>
                 <Container>
                     <Row>
                         <Col>

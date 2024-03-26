@@ -15,11 +15,11 @@ const Profile = () => {
           <img className="w-100" src={bannerImg} alt="Banner" />
         </section>
         <Container>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex">
             <div className="">
               <ProfileEditCard />
             </div>
-            <div>
+            <div className="ms-md-4 ms-xl-5 mt-4">
               <ProfileNav />
               <Outlet />
             </div>
