@@ -1,7 +1,6 @@
 @import "../../../../Assets/Theme/_var.scss";
 
 .postCard {
-    width: 726px;
     background-color: $cardbg;
     border: 1px solid $baseclr;
     padding: 20px;
@@ -9,6 +8,22 @@
     .hr{
         border-bottom: 1px solid $hrcolor;
         border-collapse: collapse;
+    }
+    figure{
+        width: 130px;
+        margin-right: 5px;
+        img{
+            width: 100px;
+        }
+    }
+    img{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .small{
+        font-size: 11px;
+        color: $lighttext;
+        margin: 5px 0px;
     }
 }
 

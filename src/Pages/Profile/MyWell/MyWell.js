@@ -9,7 +9,8 @@ const MyWell = () => {
       userimage: userimage,
       caption:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde exercitationem eum aspernatur facilis! Assumenda repellat quia placeat nesciunt? Odit dolor voluptas sit commodi fugiat quis. Aliquam dolorem placeat voluptatibus labore?",
-      postimage: postimage,
+      // postimage: postimage,
+      time: "10 minutes ago",
     },
     {
       name: "Rohit Kumar",
@@ -17,6 +18,15 @@ const MyWell = () => {
       caption:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde exercitationem eum aspernatur facilis! Assumenda repellat quia placeat nesciunt? Odit dolor voluptas sit commodi fugiat quis. Aliquam dolorem placeat voluptatibus labore?",
       postimage: postimage,
+      time: "2 hours ago",
+    },
+    {
+      name: "Mohit Singh",
+      userimage: userimage,
+      caption:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde exercitationem eum aspernatur facilis! Assumenda repellat quia placeat nesciunt? Odit dolor voluptas sit commodi fugiat quis. Aliquam dolorem placeat voluptatibus labore?",
+      postimage: postimage,
+      time: "2 days ago",
     },
   ];
   return (
@@ -29,6 +39,7 @@ const MyWell = () => {
               username={item.name}
               postimage={item.postimage}
               caption={item.caption}
+              time={item.time}
             />
           );
         })}

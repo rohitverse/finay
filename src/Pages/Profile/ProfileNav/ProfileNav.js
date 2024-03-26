@@ -4,7 +4,7 @@ import "./ProfileNav.scss";
 
 const ProfileNav = () => {
   return (
-    <div className="profileNav my-2">
+    <div className="profileNav">
       <NavLink to="my-well">My well</NavLink>
 
       <Link to="#">Library</Link>
