@@ -19,39 +19,29 @@ const Routes = () => {
         },
 
         {
-          "path": "profile",
-          "element": <Profile />,
-          "children": [
+          path: "profile",
+          element: <Profile />,
+          children: [
             {
-              "path": "my-well",
-              "element": <MyWell />,
-              "children": [
-                {
-                  "path": "my-well",
-                  "element": <MyWell />
-                }
-              ]
+              path: "my-well",
+              element: <MyWell />,
             },
             {
-              "path": "library",
-              "element": <Library />,
-              "children": [
+              path: "library",
+              element: <Library />,
+              children: [
                 {
-                  "path": "songs",
-                  "element": <Songs />,
-                  "children": [
-                    {
-                      "path": "events",
-                      "element": <MyWell />
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-        
-      
+                  path: "songs",
+                  element: <Songs />,
+                },
+                {
+                  path: "events",
+                  element: <Songs />,
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
   ];
