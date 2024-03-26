@@ -4,6 +4,8 @@ import Profile from "../Pages/Profile/Profile";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import MyWell from "../Pages/Profile/MyWell/MyWell";
+import Library from "../Pages/Profile/Library/Library";
+import Songs from "../Pages/Profile/Library/Songs/Songs";
 
 const Routes = () => {
   const routes = [
@@ -15,23 +17,41 @@ const Routes = () => {
           index: true,
           element: <Home />,
         },
+
         {
-          path: "profile",
-          element: <Profile />,
-          children: [
+          "path": "profile",
+          "element": <Profile />,
+          "children": [
             {
-              path: "my-well",
-              element: <MyWell />,
-              children: [
+              "path": "my-well",
+              "element": <MyWell />,
+              "children": [
                 {
-                  path: "my-well",
-                  element: <MyWell />,
-                  
-                },]
+                  "path": "my-well",
+                  "element": <MyWell />
+                }
+              ]
             },
-            
-          ],
-        },
+            {
+              "path": "library",
+              "element": <Library />,
+              "children": [
+                {
+                  "path": "songs",
+                  "element": <Songs />,
+                  "children": [
+                    {
+                      "path": "events",
+                      "element": <MyWell />
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        
+      
       ],
     },
   ];

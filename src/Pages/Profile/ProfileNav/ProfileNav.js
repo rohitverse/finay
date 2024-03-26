@@ -7,7 +7,7 @@ const ProfileNav = () => {
     <div className="profileNav">
       <NavLink to="my-well">My well</NavLink>
 
-      <Link to="#">Library</Link>
+      <NavLink to="library">Library</NavLink>
       <Link to="#">Store</Link>
       <Link to="#">Library</Link>
       <Link to="#">Store</Link>
