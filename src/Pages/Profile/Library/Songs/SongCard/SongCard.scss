@@ -1,0 +1,34 @@
+@import "../../../../../Assets/Theme/_var.scss";
+
+.songCard{
+    width: 250px;
+    background-color: $cardbg;
+    border-radius: 10px;
+    // height: 341px;
+    .songCardHead{
+        figure{
+            width: 50px;   
+        }
+        // .small{
+        //     font-size: 12px;
+        // }
+    }
+    .hashtag{
+        color:$yellow
+    }
+    figure{
+        width: 100%;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    button{
+        width: 220px;
+        margin: 5px;
+    }
+     .hr{
+        border-bottom: 1px solid $hrcolor;
+        border-collapse: collapse;
+    }
+}

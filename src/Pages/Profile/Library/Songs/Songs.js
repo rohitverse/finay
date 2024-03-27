@@ -1,9 +1,12 @@
 import React from "react";
+import SongCard from "./SongCard/SongCard";
 
 const Songs = () => {
   return (
     <>
-      <div className="songs">Hello</div>
+      <div className="songs"><SongCard/>
+        
+      </div>
     </>
   );
 };
