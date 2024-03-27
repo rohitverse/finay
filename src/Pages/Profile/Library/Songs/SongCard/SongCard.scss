@@ -1,17 +1,13 @@
 @import "../../../../../Assets/Theme/_var.scss";
 
 .songCard{
-    width: 300px;
+    width: 270px;
     background-color: $cardbg;
     border-radius: 10px;
-    // height: 341px;
     .songCardHead{
         figure{
             width: 50px;   
         }
-        // .small{
-        //     font-size: 12px;
-        // }
     }
     .hashtag{
         color:$yellow
