@@ -24,7 +24,7 @@ const SongCard = () => {
           </figure>
           <h4 className="mx-2"> Venom Forest Prince</h4>
           <div className="d-flex justify-content-between mx-2">
-            <div >no. of editions 50</div>
+            <div>no. of editions 50</div>
             <div className="diamond me-1">
               <span className="me-2">
                 <Diamond />
@@ -33,7 +33,10 @@ const SongCard = () => {
             </div>
           </div>
           <div className="hr m-2"></div>
-          <CustomButton className="" type="button" text="Buy" />
+          <div className="d-flex">
+            <CustomButton className="" type="button" text="Buy" />
+            <CustomButton className="makeOffer" type="button" text="Make Offer" />
+          </div>
         </div>
       </div>
     </>

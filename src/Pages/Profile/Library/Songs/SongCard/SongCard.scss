@@ -1,7 +1,7 @@
 @import "../../../../../Assets/Theme/_var.scss";
 
 .songCard{
-    width: 250px;
+    width: 300px;
     background-color: $cardbg;
     border-radius: 10px;
     // height: 341px;
@@ -30,5 +30,16 @@
      .hr{
         border-bottom: 1px solid $hrcolor;
         border-collapse: collapse;
+    }
+    .makeOffer{
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        transition: all ease-in-out 0.3s;
+        &:hover{
+            background-color: $yellow;
+            color: $black;
+
+        }
     }
 }
