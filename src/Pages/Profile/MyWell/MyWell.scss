@@ -1,0 +1,18 @@
+@import "../../../Assets/Theme/_var.scss";
+
+.createCard{
+    width: 100%;
+    background-color: $cardbg;
+    border-radius: 10px;
+    // height: 80px;
+    .left{
+        figure{
+            img{
+                height: 40px;
+            }
+        }
+        .posttext{
+            color: $lighttext;
+        }
+    }
+}

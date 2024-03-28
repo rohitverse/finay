@@ -5,7 +5,15 @@ import songPost from "../../../../../Assets/Images/songImage.svg";
 import CustomButton from "../../../../../Components/Common/CustomButton/CustomButton";
 import { Diamond } from "../../../../../Assets/Images/Svgicon";
 
-const SongCard = ({ username, headCaption, editions, value }) => {
+const SongCard = ({
+  username,
+  headCaption,
+  editions,
+  value,
+  buybtn,
+  offerbtn,
+  fluid,
+}) => {
   return (
     <>
       <div className="songCard my-3 p-2 me-3">
@@ -23,23 +31,29 @@ const SongCard = ({ username, headCaption, editions, value }) => {
             <img src={songPost} alt="song " />
           </figure>
           <h4 className="mx-2"> {headCaption}</h4>
-          <div className="d-flex justify-content-between mx-2">
-            <div>no. of editions: {editions}</div>
-            <div className="diamond me-1">
-              <span className="me-2">
-                <Diamond />
-              </span>
-              {value}
+          <div className="d-flex justify-content-between m-2 px-2">
+            <div className="my-2">
+              no. of editions: <strong>{editions}</strong>
             </div>
+            {value && (
+              <div className="diamond">
+                <Diamond />
+                <strong className="">{value}</strong>
+              </div>
+            )}
           </div>
           <div className="hr m-2"></div>
           <div className="d-flex">
-            <CustomButton className="" type="button" text="Buy" />
-            <CustomButton
-              className="makeOffer"
-              type="button"
-              text="Make Offer"
-            />
+            {buybtn && (
+              <CustomButton className="w-50" type="button" text="Buy" />
+            )}
+            {offerbtn && (
+              <CustomButton
+                className={`border-btn w-50 ${fluid}`}
+                type="button"
+                text="Make Offer"
+              />
+            )}
           </div>
         </div>
       </div>

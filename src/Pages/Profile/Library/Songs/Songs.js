@@ -8,42 +8,32 @@ const Songs = () => {
       headCaption: "Lorem placeat ",
       editions: "10",
       value: 10,
+      buybtn: true,
+      offerbtn: true,
     },
     {
       username: "@Enimen",
-      headCaption: "Lorem placeat ",
+      headCaption: "Venom Forest Prince",
       editions: "10",
       value: 10,
+      offerbtn: true,
+      fluid: "w-100",
     },
     {
       username: "@Enimen",
-      headCaption: "Lorem placeat ",
+      headCaption: "Venom Forest Prince",
       editions: "10",
       value: 10,
+      buybtn: true,
+      offerbtn: true,
     },
     {
       username: "@Enimen",
-      headCaption: "Lorem placeat ",
+      headCaption: "Venom Forest Prince",
       editions: "10",
       value: 10,
-    },
-    {
-      username: "@Enimen",
-      headCaption: "Lorem placeat ",
-      editions: "10",
-      value: 10,
-    },
-    {
-      username: "@Enimen",
-      headCaption: "Lorem placeat ",
-      editions: "10",
-      value: 10,
-    },
-    {
-      username: "@Enimen",
-      headCaption: "Lorem placeat ",
-      editions: "10",
-      value: 10,
+      buybtn: true,
+      offerbtn: true,
     },
   ];
   return (
@@ -57,6 +47,9 @@ const Songs = () => {
               editions={item.editions}
               headCaption={item.headCaption}
               value={item.value}
+              buybtn={item.buybtn}
+              offerbtn={item.offerbtn}
+              fluid={item.fluid}
             />
           );
         })}

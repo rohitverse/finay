@@ -22,20 +22,10 @@
     button{
         width: 220px;
         margin: 5px;
+        padding: 10px;
     }
      .hr{
         border-bottom: 1px solid $hrcolor;
         border-collapse: collapse;
-    }
-    .makeOffer{
-        background-color: transparent;
-        color: $white;
-        border: 1px solid $white;
-        transition: all ease-in-out 0.3s;
-        &:hover{
-            background-color: $yellow;
-            color: $black;
-
-        }
-    }
+    }    
 }

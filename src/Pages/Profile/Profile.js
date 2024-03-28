@@ -6,8 +6,17 @@ import { Container } from "react-bootstrap";
 
 import ProfileNav from "./ProfileNav/ProfileNav";
 import { Outlet } from "react-router-dom";
+import Slider from "react-slick";
+import sliderimage from "../../Assets/Images/postimage.png";
 
 const Profile = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <div className="Profile">
@@ -25,6 +34,29 @@ const Profile = () => {
             </div>
           </div>
         </Container>
+
+        <div className="slickSlider">
+          <Slider {...settings} autoplay='true'>
+            <div>
+              <img src={sliderimage} alt="img" />
+            </div>
+            <div>
+              <img src={sliderimage} alt="img" />
+            </div>
+            <div>
+              <img src={sliderimage} alt="img" />
+            </div>
+            <div>
+              <img src={sliderimage} alt="img" />
+            </div>
+            <div>
+              <img src={sliderimage} alt="img" />
+            </div>
+            <div>
+              <img src={sliderimage} alt="img" />
+            </div>
+          </Slider>
+        </div>
       </div>
     </>
   );

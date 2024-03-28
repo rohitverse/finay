@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import PostCard from "./PostCard/PostCard";
 import postimage from "../../../Assets/Images/postimage.png";
 import userimage from "../../../Assets/Images/userimg.png";
+import CreateModal from "../../../Components/Common/CommonModal/CreateModal/CreateModal";
+import "./MyWell.scss";
+import { GIF, Gallery, Smile } from "../../../Assets/Images/Svgicon";
+import toast from "react-hot-toast";
+import Toasts from "../../../Components/Common/Toasts/Toasts";
+
+const notify = () => toast("Here is your toast.");
+
 const MyWell = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const postData = [
     {
       name: "Abhi Manapragada",
@@ -31,7 +44,33 @@ const MyWell = () => {
   ];
   return (
     <>
+      <Toasts onClick={notify} text="Hello"/>
       <div className="myWell my-3">
+        <div
+          className="createCard p-3 d-flex justify-content-between"
+          onClick={handleShow}
+        >
+          <div className="left d-flex">
+            <figure>
+              <img src={userimage} alt="User Image" />
+            </figure>
+            <div className="p-2 mt-0.5 posttext align-items-center">
+              What’s on your mind?
+            </div>
+          </div>
+          <div className="right d-flex mt-2">
+            <div className="px-2">
+              <Smile />
+            </div>
+
+            <div className="px-2">
+              <GIF />
+            </div>
+            <div className="px-2">
+              <Gallery />
+            </div>
+          </div>
+        </div>
         {postData.map((item, index) => {
           return (
             <PostCard
@@ -44,6 +83,7 @@ const MyWell = () => {
           );
         })}
       </div>
+      <CreateModal show={show} handleClose={handleClose} />
     </>
   );
 };
