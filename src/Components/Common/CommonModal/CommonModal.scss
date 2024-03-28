@@ -1,2 +1,15 @@
 @import "../../../Assets/Theme/_var.scss";
 
+.commonModal{
+ .modal-content{
+    background-color: $baseclr;
+    color: $white;
+    border: 1px solid $white;
+}
+.btn-close{
+    color: $white;
+}
+.modal-header .close {
+    color: white; // Change the color to white
+  }
+}
