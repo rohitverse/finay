@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import {NavLink, useLocation } from "react-router-dom";
 import "./ProfileNav.scss";
 
 const ProfileNav = ({ userName }) => {
@@ -18,7 +18,7 @@ const ProfileNav = ({ userName }) => {
       <NavLink to="store">Store</NavLink>
       <NavLink to="favourites">Favourites</NavLink>
       <NavLink to="offers">Offers</NavLink>
-      <NavLink to="purchase-history">Purchase History</NavLink>
+      <NavLink to="/">Purchase History</NavLink>
       <NavLink to="kyc-status">KYC Status</NavLink>
     </div>
   );

@@ -22,7 +22,7 @@ const Footer = () => {
                             <Navbar>
                                 <Nav className="">
                                     <Link className='nav-link text-white' to="/">Home</Link>
-                                    <Link className='nav-link text-white' to="/about">About</Link>
+                                    <Link className='nav-link text-white' to="/profile">Profile</Link>
                                     <Link className='nav-link text-white' to="/services">Services</Link>
                                     <Link className='nav-link text-white' to="/contact">Contact</Link>
                                     <Link className='nav-link text-white' to="/privacy">Privacy</Link>
