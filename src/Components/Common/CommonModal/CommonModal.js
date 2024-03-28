@@ -3,6 +3,7 @@ import { Modal } from "react-bootstrap";
 import "./CommonModal.scss";
 import userimg from "../../../Assets/Images/userimage.png";
 import { GIF, Gallery, Smile } from "../../../Assets/Images/Svgicon";
+import CustomButton from "../CustomButton/CustomButton";
 
 const CommonModal = ({
   show,
@@ -27,12 +28,14 @@ const CommonModal = ({
           </Modal.Header>
           <Modal.Body>
             <div className="modalBody  text-white">{children}</div>
-            <figure>
-              <img src={userimg} alt="" />
-            </figure>
-            <div className="figContent">
-              <div>Abhi Manapragada</div>
-              <button>Public</button>
+            <div className="d-flex ">
+              <figure>
+                <img src={userimg} alt="" />
+              </figure>
+              <div className="figContent p-2">
+                <div className="pb-2"> Abhi Manapragada</div>
+                <button className="">Public</button>
+              </div>
             </div>
             <div className="createCard p-3 d-flex justify-content-between">
               <div className="left d-flex">
@@ -56,6 +59,7 @@ const CommonModal = ({
                 </div>
               </div>
             </div>
+            <CustomButton text="Post" className="my-2" />
           </Modal.Body>
         </Modal>
       </div>

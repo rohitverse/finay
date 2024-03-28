@@ -5,6 +5,9 @@
     background-color: $baseclr;
     color: $white;
     border: 1px solid $white;
+    button{
+        width: 100%;
+    }
 }
 .btn-close{
     color: $white;
@@ -12,4 +15,5 @@
 .modal-header .close {
     color: white; // Change the color to white
   }
+
 }
