@@ -52,7 +52,7 @@ const MyWell = () => {
         >
           <div className="left d-flex">
             <figure>
-              <img src={userimage} alt="User Image" />
+              <img src={userimage} alt="UserImage" />
             </figure>
             <div className="p-2 mt-0.5 posttext align-items-center">
               What’s on your mind?
