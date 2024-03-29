@@ -1,19 +1,42 @@
 @import "../../../Assets/Theme/_var.scss";
 
-.commonModal{
- .modal-content{
+.commonModal {
+  .modal-header {
+    font-family: Urbanist;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .modal-content {
     background-color: $baseclr;
+    background: rgb(24, 26, 32);
+    background: linear-gradient(
+      0deg,
+      rgba(24, 26, 32, 1) 50%,
+      rgba(255, 255, 255, 1) 400%
+    );
     color: $white;
     border: 1px solid $white;
-    button{
-        width: 100%;
-    }
-}
-.btn-close{
+  }
+  .btn-close {
     color: $white;
-}
-.modal-header .close {
-    color: white; // Change the color to white
+  }
+  .modal-header .close {
+    color: $white; // Change the color to white
   }
 
+  .figContent {
+    .round-public {
+      height: 2rem;
+      // width: 5rem;
+    }
+    .small {
+      font-size: 11px;
+    }
+  }
+  .posttext {
+    color: $lighttext;
+  }
+  .bigButton {
+    font-size: 2rem;
+  }
 }
